@@ -1,0 +1,190 @@
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 7rem 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.heading {
+  min-height: 25rem;
+}
+
+.heading h1 {
+  font-weight: 300;
+  font-size: 1.9rem;
+  padding: 3rem 0 1.5rem;
+  color: var(--gray);
+}
+
+.heading h1 span {
+  font-weight: 700;
+  color: #000;
+}
+
+.heading .heading-text {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  max-width: 50rem;
+  margin-bottom: 5rem;
+  gap: 1rem;
+}
+
+.error-container {
+  text-align: center;
+}
+
+.error-msg {
+  color: var(--light-red);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.form-control input {
+  border: 1px solid hsl(223, 100%, 88%);
+  font-family: inherit;
+  padding-left: 2.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  outline: none;
+  min-width: 100%;
+}
+
+.form-control input::placeholder {
+  color: var(--pale-blue);
+}
+
+.form-control button {
+  background-color: var(--blue);
+  border: none;
+  color: #fff;
+  max-height: 3.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 5px 10px 15px hsl(223, 87%, 87%);
+  outline: none;
+}
+
+.form-control button:hover {
+  background-color: hsl(223, 87%, 73%);
+  transition: 0.3s;
+}
+
+.form-style {
+  padding: 1.1rem;
+  border-radius: 30px;
+}
+
+.showcase {
+  margin-bottom: 10rem;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul li a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid hsl(0, 0%, 89%);
+  border-radius: 100%;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+  text-decoration: none;
+  color: var(--blue);
+}
+
+footer ul li a:hover {
+  background-color: var(--blue);
+  color: #fff;
+  transition: 0.3s;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .heading {
+    min-height: 22rem;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+  }
+
+  .heading .hero-text {
+    font-size: 1.2rem;
+  }
+
+  .form-control {
+    flex-direction: row;
+  }
+
+  .form-control input {
+    min-width: 25rem;
+  }
+
+  .error-msg {
+    text-align: left;
+    margin-left: 2.5rem;
+  }
+
+  .form-control button {
+    min-width: 15rem;
+  }
+
+  .showcase img {
+    max-width: 40rem;
+  }
+}
