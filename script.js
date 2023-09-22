@@ -10,6 +10,10 @@ form.addEventListener('submit', function (e) {
     errorMsg.style.display = 'block';
     errorMsg.textContent = 'Whoops! It looks like you forgot to add your email';
     email.style.borderColor = 'hsl(354, 100%, 66%)';
+  } else if (!isValidEmail(emailValue)) {
+    email.addEventListener('invalid', (e) => {
+      errorMsg.style.display = 'block';
+    });
   } else {
     form.submit();
   }
